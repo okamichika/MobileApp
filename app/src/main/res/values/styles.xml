@@ -9,4 +9,9 @@
         <item name="boxCornerRadiusTopStart">8dp</item>
 
     </style>
+
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item> <!-- Vous pouvez ajuster la taille des coins ici -->
+    </style>
 </resources>

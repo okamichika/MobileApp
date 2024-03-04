@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#458833"
     tools:context=".Inscription">
 
     <LinearLayout
@@ -42,37 +43,56 @@
             android:layout_height="match_parent"
             android:background="#F0D6BF"
             android:orientation="vertical"
-            android:padding="40dp">
+            android:paddingHorizontal="40dp"
+            android:paddingTop="15dp">
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Nom d'utilisateur" />
+                android:text="Nom d'utilisateur"
+                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#673AB7"
-                android:padding="2dp">
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#03A9F4"
+                android:padding="2dp"
+                app:boxBackgroundColor="#AA1F1F"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeWidth="2.5dp"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                tools:visibility="visible">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#D7D7D7"
+                    android:height="50dp"
+                    android:backgroundTint="#D7D7D7"
                     android:gravity="center"
-                    android:hint="hint" />
+                    android:hint="JejeF"
+                    android:includeFontPadding="false"
+                    android:textSize="15dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="178dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingRight="5dp">
 
@@ -81,26 +101,34 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Nom" />
+                        android:text="Nom"
+                        android:textSize="20sp" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:boxBackgroundColor="#8BC34A"
-                        app:boxStrokeWidth="2dp">
+                        app:boxCornerRadiusBottomEnd="30dp"
+                        app:boxCornerRadiusBottomStart="30dp"
+                        app:boxCornerRadiusTopEnd="30dp"
+                        app:boxCornerRadiusTopStart="30dp"
+                        app:boxStrokeWidth="2.5dp"
+                        app:hintEnabled="false">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="#D8D8D8"
+                            android:height="50dp"
+                            android:backgroundTint="#D7D7D7"
                             android:gravity="center"
-                            android:hint="hint" />
+                            android:hint="Fessy"
+                            android:textSize="15dp" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingLeft="5dp">
 
@@ -109,18 +137,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Prénom" />
+                        android:text="Prénom"
+                        android:textSize="20sp" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        app:boxBackgroundColor="#8BC34A"
+                        app:boxCornerRadiusBottomEnd="30dp"
+                        app:boxCornerRadiusBottomStart="30dp"
+                        app:boxCornerRadiusTopEnd="30dp"
+                        app:boxCornerRadiusTopStart="30dp"
+                        app:boxStrokeWidth="2.5dp"
+                        app:hintEnabled="false">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="#D8D8D8"
+                            android:height="50dp"
+                            android:backgroundTint="#D7D7D7"
                             android:gravity="center"
-                            android:hint="hint" />
+                            android:hint="Jerome"
+                            android:textSize="15dp" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -130,18 +168,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Adresse email" />
+                android:text="Adresse email"
+                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:boxBackgroundColor="#8BC34A"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeWidth="2.5dp"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#D8D8D8"
+                    android:height="50dp"
+                    android:backgroundTint="#D7D7D7"
                     android:gravity="center"
-                    android:hint="hint" />
+                    android:hint="Jerome.Fessy@email.com"
+                    android:textSize="15dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -149,18 +198,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Mot de passe" />
+                android:text="Mot de passe"
+                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="64dp">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:boxBackgroundColor="#8BC34A"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeWidth="2.5dp"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#D8D8D8"
+                    android:height="50dp"
+                    android:backgroundTint="#D7D7D7"
                     android:gravity="center"
-                    android:hint="hint" />
+                    android:hint="A1b2*"
+                    android:textSize="15dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -168,26 +228,66 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Confirmer mot de passe" />
+                android:text="Confirmer mot de passe"
+                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="62dp">
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#8BC34A"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeWidth="2.5dp"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#D8D8D8"
+                    android:height="50dp"
+                    android:backgroundTint="#D7D7D7"
                     android:gravity="center"
-                    android:hint="hint" />
+                    android:hint="A1b2*"
+                    android:textSize="15dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#458833"
                 android:gravity="center"
-                android:text="Valider" />
+                android:text="Valider"
+                android:textColor="#FFFFFF"
+                app:rippleColor="#4CAF50"
+                app:strokeColor="#03A9F4"
+                app:strokeWidth="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="vous avez déjà un compte ? " />
+
+                <TextView
+                    android:id="@+id/haveaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="se connecter"
+                    android:textColor="#0000F4" />
+            </LinearLayout>
 
 
         </LinearLayout>

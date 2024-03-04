@@ -11,6 +11,7 @@
         android:layout_height="0dp"
         android:background="#122840"
         android:orientation="vertical"
+        android:paddingHorizontal="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,21 +49,29 @@
                 android:id="@+id/se_connecter"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:background="#53B5AA"
-                android:text="se connecter" />
+                android:backgroundTint="#53B5AA"
+                android:minHeight="55dip"
+                android:text="se connecter"
+                android:textSize="16sp"
+                app:cornerRadius="0dp"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
 
             <Button
                 android:id="@+id/inscription"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="40dp"
                 android:layout_weight="1"
-                android:background="#53B5AA"
-                android:text="s'inscrire" />
+                android:backgroundTint="#53B5AA"
+                android:minHeight="55dip"
+                android:text="s'inscrire"
+                android:textSize="16sp"
+                app:cornerRadius="0dp"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
         </LinearLayout>
 
     </LinearLayout>
