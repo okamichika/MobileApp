@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MedocHub_TMP</string>
+    <string name="todo">TODO</string>
+    <string name="MedocHub">MedocHub</string>
+    <string name="chargement">chargement ...</string>
+    <string name="username">username</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="inscription">Inscription</string>
+</resources>
