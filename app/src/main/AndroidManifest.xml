@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MedocHub_TMP"
         tools:targetApi="31">
         <activity
+            android:name=".Medicaments"
+            android:exported="false" />
+        <activity
             android:name=".Inscription"
             android:exported="false" />
         <activity
