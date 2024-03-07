@@ -61,8 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:backgroundTint="#03A9F4"
-                app:boxBackgroundColor="#BC2424"
+                app:boxBackgroundColor="#D7D7D7"
                 app:boxBackgroundMode="outline"
                 app:boxCollapsedPaddingTop="10dp"
                 app:boxCornerRadiusBottomEnd="30dp"
@@ -73,12 +72,13 @@
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:height="60dp"
                     android:backgroundTint="#D7D7D7"
-                    android:gravity="center"
 
+                    android:gravity="center"
                     android:hint="JejeF"
                     app:boxStrokeColor="#00FF00"
                     app:boxStrokeWidth="5dp" />
@@ -110,6 +110,7 @@
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mdp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:height="60dp"
@@ -130,8 +131,16 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/infoconexion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
             <Button
-                android:id="@+id/button"
+                android:id="@+id/BvaliderCo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"

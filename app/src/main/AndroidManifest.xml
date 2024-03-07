@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MedocHub_TMP"
         tools:targetApi="31">
         <activity
+            android:name=".Profil"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultationMedoc"
+            android:exported="false" />
+        <activity
+            android:name=".AjoutMedoc"
+            android:exported="false" />
+        <activity
             android:name=".Medicaments"
             android:exported="false" />
         <activity
@@ -35,8 +47,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

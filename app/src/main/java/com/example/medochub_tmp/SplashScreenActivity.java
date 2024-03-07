@@ -17,6 +17,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //démarrer page
+
+                //if deja connecté alors lancer page accueil sinon lancer page de connection
                 Intent intent = new Intent(getApplicationContext(), connection.class);
                 startActivity(intent);
                 finish();

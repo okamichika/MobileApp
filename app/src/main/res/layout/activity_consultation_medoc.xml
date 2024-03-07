@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D6D6D6"
-    tools:context=".Medicaments">
+    tools:context=".ConsultationMedoc">
+
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#F0D6BF"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +24,8 @@
 
             <ImageView
                 android:id="@+id/Bprofil"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/ppf" />
@@ -41,43 +40,40 @@
 
             <ImageView
                 android:id="@+id/Bsettings"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/settings" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/BajoutM"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="40dp"
-            android:backgroundTint="#ABC8B6"
-            android:gravity="center"
-            android:paddingVertical="30dp"
-            android:text="Signaler un médicament manquant"
-            android:textColor="#000000"
-            android:textSize="48sp"
-            app:cornerRadius="0dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp" />
+            android:layout_height="match_parent"
+            android:background="#F0D6BF"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="40dp">
 
-        <Button
-            android:id="@+id/BconsultM"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginBottom="70dp"
-            android:backgroundTint="#ABC8B6"
-            android:gravity="center"
-            android:paddingVertical="30dp"
-            android:text="Consulter les médicaments signaler"
-            android:textColor="#000000"
-            android:textSize="48sp"
-            app:cornerRadius="0dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/Baccueil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="#ABC8B6"
+                    android:text="Retour à l'accueil"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    app:cornerRadius="0dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp" />
+            </FrameLayout>
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

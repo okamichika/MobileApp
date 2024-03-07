@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Medicaments extends AppCompatActivity {
+public class AjoutMedoc extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medicaments);
+        setContentView(R.layout.activity_ajout_medoc);
 
         ImageView bsettings = findViewById(R.id.Bsettings);
 
@@ -35,23 +35,12 @@ public class Medicaments extends AppCompatActivity {
             }
         });
 
-        Button bajout = findViewById(R.id.BajoutM);
+        Button baccueil = findViewById(R.id.Bannuler);
 
-        bajout.setOnClickListener(new View.OnClickListener() {
+        baccueil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AjoutMedoc.class);
-                startActivity(intent);
-            }
-        });
-
-        Button bconsult = findViewById(R.id.BconsultM);
-
-        bconsult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ConsultationMedoc.class);
-                startActivity(intent);
+                finish();
             }
         });
     }
