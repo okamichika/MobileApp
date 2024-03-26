@@ -25,8 +25,8 @@ public class authentification extends AppCompatActivity {
         setContentView(R.layout.activity_authentification);
 
         TextView createaccount = (TextView) findViewById(R.id.nothaveaccount);
-        TextInputEditText login = findViewById(R.id.login);
-        TextInputEditText mdp = findViewById(R.id.mdp);
+        login = (EditText)findViewById(R.id.login);
+        mdp = (EditText)findViewById(R.id.mdp);
         Button bvaliderCo = findViewById(R.id.BvaliderCo);
         TextView infoconexion = findViewById(R.id.infoconexion);
         createaccount.setOnClickListener(new View.OnClickListener() {
