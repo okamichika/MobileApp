@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/MedocName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom médicament"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CIP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:text="code CIP"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <!-- Consommation totale -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Jour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jour" />
+
+            <TextView
+                android:id="@+id/NumJour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Num Jour" />
+
+            <TextView
+                android:id="@+id/Mois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mois" />
+
+            <TextView
+                android:id="@+id/Annee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Année" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
