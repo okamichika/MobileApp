@@ -63,7 +63,7 @@ public class authentification extends AppCompatActivity {
     public void onLogin(View view) {
         String username = login.getText().toString();
         String password = mdp.getText().toString();
-        String type = "log";
+        String type = "login";
         Validation validation = new Validation(this);
         validation.execute(type, username, password);
     }
