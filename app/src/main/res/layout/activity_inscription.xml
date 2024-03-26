@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#458833"
-    tools:context=".Inscription">
+    tools:context=".activity.Inscription">
 
     <LinearLayout
         android:layout_width="0dp"

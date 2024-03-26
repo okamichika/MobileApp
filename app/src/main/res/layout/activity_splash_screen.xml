@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C4C4C4"
-    tools:context=".SplashScreenActivity">
+    tools:context=".activity.SplashScreenActivity">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -24,7 +24,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="100sp"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logogrey" />
 
         <TextView
             android:id="@+id/textView"

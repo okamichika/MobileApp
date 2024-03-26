@@ -1,4 +1,4 @@
-package com.example.medochub_tmp;
+package com.example.medochub_tmp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Medicaments extends AppCompatActivity {
+import com.example.medochub_tmp.MedicamentListFragment;
+import com.example.medochub_tmp.R;
+
+public class ConsultationMedocActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medicaments);
+        setContentView(R.layout.activity_consultation_medoc);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, new MedicamentListFragment())
+                .commit();
 
         ImageView bsettings = findViewById(R.id.Bsettings);
 
@@ -35,24 +42,16 @@ public class Medicaments extends AppCompatActivity {
             }
         });
 
-        Button bajout = findViewById(R.id.BajoutM);
+        Button baccueil = findViewById(R.id.Baccueil);
 
-        bajout.setOnClickListener(new View.OnClickListener() {
+        baccueil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AjoutMedoc.class);
+                Intent intent = new Intent(getApplicationContext(), Medicaments.class);
                 startActivity(intent);
             }
         });
 
-        Button bconsult = findViewById(R.id.BconsultM);
 
-        bconsult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ConsultationMedoc.class);
-                startActivity(intent);
-            }
-        });
     }
 }

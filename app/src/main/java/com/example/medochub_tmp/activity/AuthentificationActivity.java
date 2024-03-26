@@ -1,11 +1,9 @@
-package com.example.medochub_tmp;
+package com.example.medochub_tmp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,11 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.medochub_tmp.R;
+import com.example.medochub_tmp.Validation;
 
 import java.util.Objects;
 
-public class authentification extends AppCompatActivity {
+public class AuthentificationActivity extends AppCompatActivity {
     EditText login, mdp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +28,10 @@ public class authentification extends AppCompatActivity {
         mdp = (EditText)findViewById(R.id.mdp);
         Button bvaliderCo = findViewById(R.id.BvaliderCo);
         TextView infoconexion = findViewById(R.id.infoconexion);
+        infoconexion.setTextColor(Color.rgb(255, 0, 0));
         createaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("MainActivity", "onClick: Bouton connection_id cliqué!!!");
-
                 Intent intent = new Intent(getApplicationContext(), Inscription.class);
                 startActivity(intent);
             }

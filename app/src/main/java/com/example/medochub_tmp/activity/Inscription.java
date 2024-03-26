@@ -1,4 +1,4 @@
-package com.example.medochub_tmp;
+package com.example.medochub_tmp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.medochub_tmp.R;
+import com.example.medochub_tmp.activity.AuthentificationActivity;
+import com.example.medochub_tmp.activity.ConsultationMedocActivity;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class Inscription extends AppCompatActivity {
@@ -34,7 +37,7 @@ public class Inscription extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i("MainActivity", "onClick: Bouton connection_id cliqué!!!");
 
-                Intent intent = new Intent(getApplicationContext(), authentification.class);
+                Intent intent = new Intent(getApplicationContext(), AuthentificationActivity.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +48,7 @@ public class Inscription extends AppCompatActivity {
                 if(verifAccount(email.toString(), passwd1.getText().toString(), passwd2.getText().toString())){
                     Log.i("MainActivity", "ok, soit on co directment soit on demande une authentification");
                     //a retirer après :
-                    startActivity(new Intent(getApplicationContext(), ConsultationMedoc.class));
+                    startActivity(new Intent(getApplicationContext(), ConsultationMedocActivity.class));
                 }else{
                     Log.i("MainActivity", "Nok");
                 }

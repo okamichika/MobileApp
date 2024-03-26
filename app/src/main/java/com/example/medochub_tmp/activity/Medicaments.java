@@ -1,4 +1,4 @@
-package com.example.medochub_tmp;
+package com.example.medochub_tmp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class AjoutMedoc extends AppCompatActivity {
+import com.example.medochub_tmp.R;
+
+public class Medicaments extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ajout_medoc);
+        setContentView(R.layout.activity_medicaments);
 
         ImageView bsettings = findViewById(R.id.Bsettings);
 
@@ -35,12 +37,23 @@ public class AjoutMedoc extends AppCompatActivity {
             }
         });
 
-        Button baccueil = findViewById(R.id.Bannuler);
+        Button bajout = findViewById(R.id.BajoutM);
 
-        baccueil.setOnClickListener(new View.OnClickListener() {
+        bajout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(getApplicationContext(), AjoutMedocActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button bconsult = findViewById(R.id.BconsultM);
+
+        bconsult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ConsultationMedocActivity.class);
+                startActivity(intent);
             }
         });
     }

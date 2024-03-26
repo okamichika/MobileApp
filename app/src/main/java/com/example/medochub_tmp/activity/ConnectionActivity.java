@@ -1,4 +1,4 @@
-package com.example.medochub_tmp;
+package com.example.medochub_tmp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class connection extends AppCompatActivity {
+import com.example.medochub_tmp.R;
+
+public class ConnectionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class connection extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i("MainActivity", "onClick: Bouton connection_id cliqué!!!");
 
-                Intent intent = new Intent(getApplicationContext(), authentification.class);
+                Intent intent = new Intent(getApplicationContext(), AuthentificationActivity.class);
                 startActivity(intent);
             }
         });

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".authentification">
+    tools:context=".activity.AuthentificationActivity">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -77,7 +77,6 @@
                     android:layout_height="match_parent"
                     android:height="60dp"
                     android:backgroundTint="#D7D7D7"
-
                     android:gravity="center"
                     android:hint="JejeF"
                     app:boxStrokeColor="#00FF00"

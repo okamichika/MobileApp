@@ -1,4 +1,4 @@
-package com.example.medochub_tmp;
+package com.example.medochub_tmp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,25 +6,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.medochub_tmp.R;
+import com.example.medochub_tmp.activity.ConnectionActivity;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        // redirection vers mainActivity apres 3s
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                //démarrer page
-
-                //if deja connecté alors lancer page accueil sinon lancer page de connection
-                Intent intent = new Intent(getApplicationContext(), connection.class);
+                Intent intent = new Intent(getApplicationContext(), ConnectionActivity.class);
                 startActivity(intent);
                 finish();
             }
         };
-        //handler post delayed
         new Handler().postDelayed(runnable, 3000);
 
     }

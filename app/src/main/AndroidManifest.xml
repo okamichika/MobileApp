@@ -21,31 +21,31 @@
             android:name=".MedicamentList"
             android:exported="false" />
         <activity
-            android:name=".Profil"
+            android:name=".activity.Profil"
             android:exported="false" />
         <activity
-            android:name=".Settings"
+            android:name=".activity.Settings"
             android:exported="false" />
         <activity
-            android:name=".ConsultationMedoc"
+            android:name=".activity.ConsultationMedocActivity"
             android:exported="false" />
         <activity
-            android:name=".AjoutMedoc"
+            android:name=".activity.AjoutMedocActivity"
             android:exported="false" />
         <activity
-            android:name=".Medicaments"
+            android:name=".activity.Medicaments"
             android:exported="false" />
         <activity
-            android:name=".Inscription"
+            android:name=".activity.Inscription"
             android:exported="false" />
         <activity
-            android:name=".authentification"
+            android:name=".activity.AuthentificationActivity"
             android:exported="false" />
         <activity
-            android:name=".connection"
+            android:name=".activity.ConnectionActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
