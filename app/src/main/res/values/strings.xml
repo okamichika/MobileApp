@@ -6,4 +6,6 @@
     <string name="username">username</string>
     <string name="s_inscrire">S\'inscrire</string>
     <string name="inscription">Inscription</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

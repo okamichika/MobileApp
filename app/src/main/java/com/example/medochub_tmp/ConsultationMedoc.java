@@ -15,6 +15,10 @@ public class ConsultationMedoc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultation_medoc);
 
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, new MedicamentListFragment())
+                .commit();
+
         ImageView bsettings = findViewById(R.id.Bsettings);
 
         bsettings.setOnClickListener(new View.OnClickListener() {
