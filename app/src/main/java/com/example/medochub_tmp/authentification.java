@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -16,7 +18,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.Objects;
 
 public class authentification extends AppCompatActivity {
-
+    EditText login, mdp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,5 +58,13 @@ public class authentification extends AppCompatActivity {
         //verif dans bdd
 
         return id.equals(mdp);
+    }
+
+    public void onLogin(View view) {
+        String username = login.getText().toString();
+        String password = mdp.getText().toString();
+        String type = "log";
+        Validation validation = new Validation(this);
+        validation.execute(type, username, password);
     }
 }

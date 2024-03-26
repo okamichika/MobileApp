@@ -148,7 +148,8 @@
                 android:text="valider"
                 app:cornerRadius="0dp"
                 app:strokeColor="#000000"
-                app:strokeWidth="2dp" />
+                app:strokeWidth="2dp"
+                android:onClick="onLogin"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
