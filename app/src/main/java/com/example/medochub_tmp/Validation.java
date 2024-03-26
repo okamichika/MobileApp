@@ -20,7 +20,7 @@ import java.net.URLEncoder;
 public class Validation extends AsyncTask<String,Void,String> {
     Context context;
     AlertDialog alertDialog;
-    Validation (Context ctx) {
+    public Validation (Context ctx) {
         context = ctx;
     }
     @Override
