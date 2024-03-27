@@ -216,7 +216,7 @@
                     android:backgroundTint="#ABC8B6"
                     android:text="Retour à l'accueil"
                     android:textColor="@color/black"
-                    android:textSize="42sp"
+                    android:textSize="35sp"
                     app:cornerRadius="0dp"
                     app:strokeWidth="1dp" />
             </FrameLayout>

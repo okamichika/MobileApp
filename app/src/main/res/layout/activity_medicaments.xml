@@ -73,7 +73,7 @@
             android:backgroundTint="#ABC8B6"
             android:gravity="center"
             android:paddingVertical="30dp"
-            android:text="Consulter les médicaments signaler"
+            android:text="Consulter les médicaments signalés"
             android:textColor="#000000"
             android:textSize="48sp"
             app:cornerRadius="0dp"

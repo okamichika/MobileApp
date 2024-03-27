@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -12,7 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.Calendar;
 import java.util.List;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MedicamentListFragment extends Fragment {
 
@@ -41,19 +44,19 @@ public class MedicamentListFragment extends Fragment {
         // Ajouter chaque médicament à la liste
         for (Medicament medicament : medicamentList) {
             View medicamentView = LayoutInflater.from(requireContext()).inflate(R.layout.activity_medicament, null);
-            TextView MedocName = medicamentView.findViewById(R.id.MedocName);
             TextView CIP = medicamentView.findViewById(R.id.CIP);
-            TextView Jour = medicamentView.findViewById(R.id.Jour);
-            TextView NumJour = medicamentView.findViewById(R.id.NumJour);
-            TextView Mois = medicamentView.findViewById(R.id.Mois);
-            TextView Annee = medicamentView.findViewById(R.id.Annee);
+            TextView Date = medicamentView.findViewById(R.id.Date);
 
-            MedocName.setText(medicament.getName());
-            CIP.setText(medicament.getCIP());
-            /*Jour.setText(medicament.getJour());
-            NumJour.setText(medicament.getNumJ());
-            Mois.setText(medicament.getMois());
-            Annee.setText(medicament.getAnnee());*/
+            StringBuilder sb = new StringBuilder(CIP.getText());
+            sb.append(" ").append(medicament.getCIP());
+            CIP.setText(sb);
+
+            Date dateDuJour = new Date();
+            SimpleDateFormat formateur = new SimpleDateFormat("dd/MM/yyyy");
+            String dateFormatee = formateur.format(dateDuJour);
+            StringBuilder sb1 = new StringBuilder(Date.getText());
+            sb1.append(" ").append(dateFormatee);
+            Date.setText(sb1);
 
             layoutMedicamentList.addView(medicamentView);
         }
