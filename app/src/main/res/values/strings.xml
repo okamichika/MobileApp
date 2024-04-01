@@ -17,7 +17,7 @@
     <string name="last_name_example">Fessy</string>
     <string name="first_name">Prénom</string>
     <string name="first_name_example">Jerome</string>
-    <string name="email_example">jerome.fessy@u-paris.fr</string>
+    <string name="email_example">example@gmail.com</string>
     <string name="email">Adresse email</string>
     <string name="confirm_password">Confirmer mot de passe</string>
     <string name="already_register">vous avez déjà un compte ?</string>
@@ -36,7 +36,7 @@
     <string name="email_profile">E-mail :</string>
     <string name="change_information">Modifier les informations</string>
     <string name="CIP">Code CIP</string>
-    <string name="cip_example">3400930244906</string>
+    <string name="cip_example">ID</string>
     <string name="cancel">annuler</string>
     <string name="qrcode_button">Scannez le QR Code</string>
 </resources>
